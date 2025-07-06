@@ -1,32 +1,154 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SJ Capital Investaa</title>
-    <link href="style.css" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SJ Capital Investaa</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f9f9f9;
+      color: #111;
+    }
+    header {
+      background: #f46530;
+      color: white;
+      padding: 30px 20px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+    }
+    nav {
+      background: #1b262c;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 10px;
+      flex-wrap: wrap;
+    }
+    nav a {
+      color: #fcdbcf;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    nav a:hover {
+      color: #fff;
+    }
+    main {
+      max-width: 1000px;
+      margin: 20px auto;
+      padding: 20px;
+      background: white;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    section {
+      margin-bottom: 40px;
+    }
+    h2 {
+      color: #f46530;
+      border-bottom: 2px solid #f46530;
+      padding-bottom: 5px;
+    }
+    ul {
+      padding-left: 20px;
+    }
+    footer {
+      text-align: center;
+      background: #eee;
+      padding: 20px;
+      font-size: 0.9em;
+    }
+    .contact-links a {
+      display: inline-block;
+      margin: 10px 15px;
+      text-decoration: none;
+      color: #f46530;
+    }
+    form input, form textarea, form button {
+      display: block;
+      width: 100%;
+      max-width: 500px;
+      margin: 10px 0;
+      padding: 10px;
+      font-size: 1em;
+    }
+    form button {
+      background: #f46530;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <h1>SJ Capital Investaa</h1>
-        <p>Your Growth Partners</p>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="services.html">Services</a>
-            <a href="why.html">Why Us</a>
-            <a href="testimonials.html">Testimonials</a>
-            <a href="connect.html">Connect</a>
-        </nav>
-    </header>
-    <main>
-        <section class="hero">
-            <h2>Welcome to SJ Capital Investaa</h2>
-            <p>Helping you grow your wealth through informed mutual fund investments.</p>
-        </section>
-    </main>
-    <footer>
-        <p>© 2025 Shrikanth Jhawar | SJ Capital Investaa</p>
-    </footer>
+  <header>
+    <h1>SJ Capital Investaa</h1>
+    <p>Your Growth Partners</p>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#why">Why Us</a>
+    <a href="#testimonials">Testimonials</a>
+    <a href="#connect">Connect</a>
+  </nav>
+
+  <main>
+    <section id="about">
+      <h2>About Us</h2>
+      <p>We are a SEBI-registered Mutual Fund Distributor committed to offering transparent, honest, and client-centric investment advice. With a deep understanding of the market and a strong belief in long-term wealth creation, we help individuals and families grow their financial future.</p>
+    </section>
+
+    <section id="services">
+      <h2>Our Services</h2>
+      <ul>
+        <li>Mutual Fund Investment Planning</li>
+        <li>SIP Portfolio Structuring</li>
+        <li>Tax Saving (ELSS)</li>
+        <li>Children’s Education Planning</li>
+        <li>Retirement Planning</li>
+        <li>Wealth Creation Strategies</li>
+      </ul>
+    </section>
+
+    <section id="why">
+      <h2>Why Choose SJ Capital?</h2>
+      <ul>
+        <li>Honest, Transparent Advice</li>
+        <li>SEBI-Registered & Certified</li>
+        <li>Tailor-made Financial Solutions</li>
+        <li>Simple, Clean, and Trustworthy Process</li>
+        <li>Client-first, Always</li>
+      </ul>
+    </section>
+
+  
+
+    <section id="connect">
+      <h2>Connect with Me</h2>
+      <form action="https://formspree.io/f/your-form-id" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" placeholder="Your Message"></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+      <div class="contact-links">
+        <a href="tel:+919966065654">📞 9966065654</a>
+        <a href="https://wa.me/919966065654" target="_blank">💬 WhatsApp</a>
+        <a href="mailto:shrikanth@sjcapital.in">✉️ shrikanth@sjcapital.in</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    © 2025 Shrikanth Jhawar | SJ Capital Investaa
+  </footer>
 </body>
 </html>
